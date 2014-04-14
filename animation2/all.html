@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+
+<div class="section" id="css">
+    <h1>CSS</h1>
+    <div class="container" style="position: relative">
+        <div class="animatedElem" style="width:50px;height:50px;background-color:red;position:absolute;"></div>
+    </div>
+    <p>
+        It is not possible to animate the element with transform like the others.
+        The only solution to animate the element along a wave is, to make a lot of keyframes. But thats very bad
+        because it takes long to write, it looks ugly and it's impossible to maintain.
+    </p>
+</div>
+
+<div class="section" id="svg">
+    <h1>SVG</h1>
+    <div class="container" style="position: relative">
+        <svg class="animation1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 300 150" width="300" height="150" fill="white" style="display:inherit">
+            <path d="M20,50 q60,50 100,0 q60,-50 100,0" stroke="black" stroke-width="1" fill="none" />
+            <rect x="0" y="0" width="50" height="50"
+                  style="stroke: #ff0000; fill: #ff0000;">
+                <animateMotion
+                        path="M-5,25 q60,50 100,0 q60,-50 100,0"
+                        begin="0s" dur="4s" repeatCount="indefinite"
+                        />
+            </rect>
+        </svg>
+    </div>
+</div>
+
+<div class="section" id="webanimation">
+    <h1>Web Animation 1.0</h1>
+    <div class="container" style="position: relative">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 300 150" width="300" height="150" fill="white" style="display:inherit">
+            <path id="animpath" d="M20,50 q60,50 100,0 q60,-50 100,0" stroke="black" stroke-width="1" fill="none" />
+            <path id="path" d="M20,50 q60,50 100,0 q60,-50 100,0" stroke="black" stroke-width="1" fill="none" />
+        </svg>
+        <div class="animatedElem" style="width:50px;height:50px;background-color:red;position:absolute;top:0;left:0"></div>
+    </div>
+</div>
+
+<script src="../jquery-2.0.3.js"></script>
+<script src="../web-animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
