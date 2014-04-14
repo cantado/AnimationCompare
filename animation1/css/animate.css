@@ -1,0 +1,23 @@
+
+#css .animatedElem,
+#animatedElem{
+    animation:         animation1 4s infinite;
+    -webkit-animation: animation1 4s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function:linear;
+}
+
+@keyframes animation1{
+    0%  { left: 0;     top: 0;     }
+    25% { left: 100px; top: 0;     }
+    50% { left: 100px; top: 100px; }
+    75% { left: 0;     top: 100px; }
+    100%{ left: 0;     top: 0;     }
+}
+@-webkit-keyframes animation1{
+    0%  { left: 0;     top: 0;     }
+    25% { left: 100px; top: 0;     }
+    50% { left: 100px; top: 100px; }
+    75% { left: 0;     top: 100px; }
+    100%{ left: 0;     top: 0;     }
+}
