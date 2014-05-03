@@ -1,17 +1,13 @@
 
 #css .animatedElem,
 #animatedElem{
-    animation:         animation1 2s linear;
-    -webkit-animation: animation1 2s linear;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation:         animation1 2s linear 0s 1 normal forwards;
+    -webkit-animation: animation1 2s linear 0s 1 normal forwards;
 }
 #css .animatedElem2,
 #animatedElem2{
-    animation:         animation2 2s linear 2s;
-    -webkit-animation: animation2 2s linear 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation:         animation2 2s linear 2s 1 normal forwards;
+    -webkit-animation: animation2 2s linear 2s 1 normal forwards;
 }
 
 @keyframes animation1{
