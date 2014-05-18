@@ -1,0 +1,29 @@
+
+#css .animatedElem,
+#animatedElem{
+    animation:         animation1 2s linear 0s 1 normal forwards;
+    -webkit-animation: animation1 2s linear 0s 1 normal forwards;
+}
+#css .animatedElem2,
+#animatedElem2{
+    animation:         animation2 2s linear 2s 1 normal forwards;
+    -webkit-animation: animation2 2s linear 2s 1 normal forwards;
+}
+
+@keyframes animation1{
+    0%  { left: 0; }
+    100%{ left: 100px; }
+}
+@-webkit-keyframes animation1{
+    0%  { left: 0; }
+    100%{ left: 100px; }
+}
+
+@keyframes animation2{
+    0%  { left: 150px; }
+    100%{ left: 250px; }
+}
+@-webkit-keyframes animation2{
+    0%  { left: 150px; }
+    100%{ left: 250px; }
+}
