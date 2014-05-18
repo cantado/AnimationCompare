@@ -13,11 +13,6 @@
     <div class="container" style="position: relative">
         <div class="animatedElem" style="width:50px;height:50px;background-color:red;position:absolute;"></div>
     </div>
-    <p>
-        It is not possible to animate the element with transform like the others.
-        The only solution to animate the element along a wave is, to make a lot of keyframes. But thats very bad
-        because it takes long to write, it looks ugly and it's impossible to maintain.
-    </p>
 </div>
 
 <div class="section" id="svg">
@@ -45,7 +40,7 @@
             <path id="animpath" d="M20,50 q60,50 100,0 q60,-50 100,0" stroke="black" stroke-width="1" fill="none" />
             <path id="path" d="M20,50 q60,50 100,0 q60,-50 100,0" stroke="black" stroke-width="1" fill="none" />
         </svg>
-        <div class="animatedElem" style="width:50px;height:50px;background-color:red;position:absolute;top:0;left:0"></div>
+        <div id="animatedElem" class="animatedElem" style="width:50px;height:50px;background-color:red;position:absolute;top:0;left:0"></div>
     </div>
 </div>
 

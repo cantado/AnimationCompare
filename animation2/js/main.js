@@ -1,6 +1,6 @@
 
 $(function(){
-    var path = document.getElementById("animpath").cloneNode();
+    var path = document.getElementById("animpath");
     var animFunc = new MotionPathEffect(path.pathSegList);
     var elem = document.getElementById('animatedElem');
 
