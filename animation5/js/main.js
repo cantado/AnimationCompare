@@ -16,7 +16,6 @@ $(function(){
     var animation1sound = new Animation(null,
         function(val, anim, oldval){
             oscillator.frequency.value = val*500+200;
-            console.log("anim1s");
         },
     animation1.endTime);
 
@@ -35,21 +34,6 @@ $(function(){
 
     var sequence = new AnimationSequence([anim1,anim2]);
     sequence.onend =  function(){ oscillator.stop(0); };
-
-    var a1 = new Animation(
-        document.getElementById('elem'),
-        [{left: '0px'}, {left: '100px'}],
-        {
-            duration: 6,
-            iterations: Infinity,
-            iterationStart: 2,
-            fill: "forwards",
-            delay: 1,
-            playbackRate: 2,
-            direction: "alternate",
-            easing: "ease-in"
-        }
-    );
 
 // spielt die Animation ab
     var player = document.timeline.play(sequence);
