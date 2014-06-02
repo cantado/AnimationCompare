@@ -5,7 +5,7 @@ $(function(){
     var elem = document.getElementById('animatedElem');
 
     var animation = new Animation(elem, animFunc,
-        { duration: 4, iterations: Infinity }
+        { duration: 4000, iterations: Infinity }
     );
 
     var player = document.timeline.play(animation);

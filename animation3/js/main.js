@@ -19,6 +19,6 @@ var animation = new Animation(null,
         ctx.lineTo(val.x, val.y);
         ctx.stroke();
     },
-4);
+4000);
 
 var player = document.timeline.play(animation);

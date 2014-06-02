@@ -11,7 +11,7 @@ $(function(){
             {left: "0px",   top: "0px"}
         ],
         {
-            duration: 4, iterations: Infinity
+            duration: 4000, iterations: Infinity
         }
     );
 
